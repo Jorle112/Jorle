@@ -1,10 +1,11 @@
+# 忽略 C/C++ 编译产生的垃圾
 *.exe
 *.o
 *.obj
-*.dll
+
+# 忽略 Java 编译产生的垃圾
 *.class
-*.jar
+
+# 忽略 编辑器产生的临时文件夹
 .vscode/
 .idea/
-.DS_Store
-Thumbs.db
