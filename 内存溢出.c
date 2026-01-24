@@ -1,21 +1,25 @@
 #include<stdio.h>
 #include<string.h>
- 
+#include<io.h>
+#include<fcntl.h>
+
 int main(){
+	_setmode(_fileno(stdout), _O_U8TEXT);
+	
 	volatile int password=0;
 	char input[8];
 	
-	printf("密码锁当前状态：%d(0表示锁死)\n",password);
-	printf("请输入密码：");
+	printf("瀵嗙爜鐮磋В鍓嶇姸鎬侊細%d(0琛ㄧず鍏抽棴)\n",password);
+	printf("璇疯緭鍏ュ瘑鐮侊細");
 	scanf("%s",input);
 	
-	printf("你输入的内容：%s\n",input);
-	printf("密码锁现在的状态：%d\n",password);
+	printf("杈撳叆鐨勫唴瀹癸細%s\n",input);
+	printf("瀵嗙爜鐮磋В鍚庣殑鐘舵�侊細%d\n",password);
 	
     if(password!=0){
-    	printf("成功！\n");
+    	printf("鎴愬姛鐮磋В\n");
 	}else{
-		printf("失败\n");
+		printf("鐮磋В澶辫触\n");
 	}
 	
 	return 0;
