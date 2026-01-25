@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<string.h>
-#include<io.h>
-#include<fcntl.h>
+#include<stdlib.h>
+
 
 int main(){
-	_setmode(_fileno(stdout), _O_U8TEXT);
+	system("chcp 65001");
 	
 	volatile int password=0;
 	char input[8];
