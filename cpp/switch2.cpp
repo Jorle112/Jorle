@@ -19,6 +19,59 @@ int main()
     cout << "请输入乙的选择(1~3):";
     cin >> b;
 
+    switch(a)
+    {
+        case 1:
+            switch(b)
+            { 
+            case 1:
+            cout << "结果为：平局" << endl;
+            break;
+            
+            case 2:
+            cout << "结果为：乙胜" << endl;
+            break;
+
+            case 3:
+            cout << "结果为：甲胜" << endl;
+            break;
+            }
+        break;
+
+        case 2:
+            switch(b)
+            {
+            case 1:
+            cout << "结果为：甲胜" << endl;    
+            break;
+
+            case 2:
+            cout << "结果为：平局" << endl;
+            break;
+
+            case 3:
+            cout << "结果为：乙胜" << endl;
+            break;
+            } 
+        break;    
+            
+        case 3:
+            switch(b)
+            {
+            case 1:
+            cout << "结果为：乙胜" << endl;    
+            break;
+
+            case 2:
+            cout << "结果为：甲胜" << endl;
+            break;
+
+            case 3:
+            cout << "结果为：平局" << endl;
+            break;
+            }
+        break;        
+    }
 
 
 
