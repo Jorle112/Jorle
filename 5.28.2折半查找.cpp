@@ -2,11 +2,12 @@
 #include<iomanip>
 #include<cstdlib>
 using namespace std;
-int abc(int arr[], int n, int a, int &b) {
+int abc(int arr[], int n, int a, int &b) 
+{
     int left = 0, right = n - 1;
     b = 0; 
 
-    while (left <= right) 
+    while (left <= right)  //折半查找
     {
         int mid = left + (right - left) / 2;
         b++;  
@@ -69,6 +70,4 @@ int main()
 
     } while (c == 1);
     
-    system("pause");
-    return 0;
-}
+  
