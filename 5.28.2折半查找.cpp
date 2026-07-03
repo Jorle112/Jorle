@@ -44,7 +44,7 @@ int main()
         cin >> arr[i];
     }
 
-    int c;
+    int c;                                                                                                                       
     do
     {
         cout << "***********************************************" << endl;
@@ -70,4 +70,7 @@ int main()
 
     } while (c == 1);
     
+    system("pause");
+    return 0;
+}
   
